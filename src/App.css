@@ -1,38 +1,55 @@
+body{
+  background-color: rgb(114, 110, 110);
+}
 .App {
+  position: fixed;   
   text-align: center;
+  top: 50%;   
+  left: 50%;   
+  transform: translate(-50%, -50%);  
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius:10px;
+  padding-bottom: 20px;
+  background-color: antiquewhite;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.captcha-container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.captcha {
+
+  border: 2px solid #000;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-balance {
+  margin-top: 10px;
 }
